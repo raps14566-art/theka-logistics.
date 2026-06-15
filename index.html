@@ -1,12 +1,186 @@
-<!-- HEADER LOGO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theka Logistics</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+header{
+    background:#0b2341;
+    color:white;
+    padding:20px 10%;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#f5b400;
+}
+.hero{
+    background:linear-gradient(rgba(11,35,65,.8),rgba(11,35,65,.8)),
+    url('https://images.unsplash.com/photo-1519003722824-194d4455a60c');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+.btn{
+    background:#25D366;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    display:inline-block;
+}
+section{
+    padding:60px 10%;
+}
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+.contact{
+    background:#0b2341;
+    color:white;
+    text-align:center;
+}
+footer{
+    background:#061528;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+    background-color:#25D366;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    font-size:30px;
+    box-shadow:2px 2px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
 <header>
-<div class="logo">
-    <img src="Screenshot_20260613_150419_WhatsApp.jpg" alt="Theka Logistics Logo">
+<nav>
+<div class="logo">THEKA LOGISTICS</div>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Moving Your Business Forward</h1>
+<p>Reliable Transport & Delivery Solutions</p>
+
+<a href="https://wa.me/27678877546?text=Hi%20I%20would%20like%20a%20quote%20for%20your%20logistics%20services"
+   target="_blank"
+   class="btn">
+   Get A Quote on WhatsApp
+</a>
+
+</section>
+
+<section>
+<h2>About Us</h2>
+<br>
+<p>
+Theka Logistics provides dependable transport, parcel delivery,
+furniture removals, collections, and business logistics services.
+We are committed to safe, affordable, and efficient deliveries.
+</p>
+</section>
+
+<section>
+<h2>Our Services</h2>
+<br>
+<div class="services">
+<div class="card">
+<h3>Local Deliveries</h3>
+<p>Fast and reliable delivery services.</p>
 </div>
 
-<a class="btn"
-href="https://wa.me/27678877546?text=Hi%20I%20would%20like%20a%20quote"
-target="_blank">
-Get A Quote
+<div class="card">
+<h3>Furniture Removals</h3>
+<p>Safe transportation of household goods.</p>
+</div>
+
+<div class="card">
+<h3>Parcel Delivery</h3>
+<p>Quick parcel collection and delivery.</p>
+</div>
+
+<div class="card">
+<h3>Business Logistics</h3>
+<p>Professional transport solutions for businesses.</p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<br>
+<p>📞 +27 678 877 546</p>
+<p>📧 raps14566@gmail.com</p>
+<br>
+<p>Contact us today for a free quote.</p>
+</section>
+
+<footer>
+<p>THEKA LOGISTICS © 2026</p>
+<p>Moving Your Business Forward</p>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a class="whatsapp-float"
+   href="https://wa.me/27678877546?text=Hi%20I%20would%20like%20a%20quote"
+   target="_blank">
+   💬
 </a>
-</header>
+
+</body>
+</html>
