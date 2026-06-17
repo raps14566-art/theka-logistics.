@@ -1,185 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OTHEKA LOGISTICS</title>
-
-<style>
+<title>Theka Logistics</title><style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
+
 body{
-    background:#f5f5f5;
-    color:#333;
+background:#f8f9fb;
+color:#333;
+line-height:1.6;
 }
+
 header{
-    background:#0b2341;
-    color:white;
-    padding:20px 10%;
+background:#071f3d;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+.logo img{
+height:70px;
 }
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#f5b400;
+
+.quote-btn{
+background:#f5b11f;
+color:#071f3d;
+padding:12px 22px;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
 }
+
 .hero{
-    background:linear-gradient(rgba(11,35,65,.8),rgba(11,35,65,.8)),
-    url('https://images.unsplash.com/photo-1519003722824-194d4455a60c');
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:120px 20px;
+height:80vh;
+background:
+linear-gradient(rgba(7,31,61,.75),rgba(7,31,61,.75)),
+url('IMG-20260425-WA0008.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
 }
-.hero h1{
-    font-size:50px;
-    margin-bottom:15px;
+
+.hero-content h1{
+font-size:3rem;
+margin-bottom:15px;
 }
-.hero p{
-    font-size:20px;
-    margin-bottom:30px;
+
+.hero-content p{
+font-size:1.2rem;
+margin-bottom:25px;
 }
-.btn{
-    background:#25D366;
-    color:white;
-    padding:15px 30px;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-    display:inline-block;
+
+.hero-content a{
+background:#25D366;
+color:white;
+padding:15px 30px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
 }
+
 section{
-    padding:60px 10%;
+padding:70px 8%;
 }
+
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
 .services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
 }
+
 .card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
+
+.fleet{
+background:white;
+text-align:center;
+}
+
+.fleet img{
+width:100%;
+max-width:900px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,.15);
+margin-top:20px;
+}
+
 .contact{
-    background:#0b2341;
-    color:white;
-    text-align:center;
+background:#071f3d;
+color:white;
+text-align:center;
 }
+
+.contact a{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+padding:15px 25px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
 footer{
-    background:#061528;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#05152b;
+color:white;
+text-align:center;
+padding:20px;
 }
 
-/* Floating WhatsApp Button */
-.whatsapp-float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:20px;
-    right:20px;
-    background-color:#25D366;
-    color:white;
-    border-radius:50%;
-    text-align:center;
-    font-size:30px;
-    box-shadow:2px 2px 10px rgba(0,0,0,0.3);
-    z-index:100;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+font-size:30px;
+color:white;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
-</style>
-</head>
-
-<body>
-
-<header>
-<nav>
-<div class="logo">OTHEKA LOGISTICS</div>
-</nav>
-</header>
-
-<section class="hero">
-<h1>Moving Your Business Forward</h1>
-<p>Reliable Transport & Delivery Solutions</p>
-
-<a href="https://wa.me/27678877546?text=Hi%20I%20would%20like%20a%20quote%20for%20your%20logistics%20services"
-   target="_blank"
-   class="btn">
-   Get A Quote on WhatsApp
+</style></head><body><header>
+<div class="logo">
+<img src="Screenshot_20260613_150419_WhatsApp.jpg" alt="Theka Logistics">
+</div><a class="quote-btn"
+href="https://wa.me/27678877546?text=Hi%20Theka%20Logistics,%20I%20would%20like%20a%20quote."
+target="_blank">
+Get Quote
 </a>
 
-</section>
+</header><section class="hero">
+<div class="hero-content">
+<h1>Moving Your Business Forward</h1>
+<p>Reliable Transport, Deliveries & Logistics Solutions</p><a href="https://wa.me/27678877546?text=Hi%20Theka%20Logistics,%20I%20would%20like%20a%20quote."
+target="_blank">
+Request a Quote
+</a>
 
-<section>
-<h2>About Us</h2>
+</div>
+</section><section class="about">
+<h2>About Theka Logistics</h2>
 <br>
 <p>
 Theka Logistics provides dependable transport, parcel delivery,
-furniture removals, collections, and business logistics services.
-We are committed to safe, affordable, and efficient deliveries.
+furniture removals, collections and business logistics services.
+Our mission is to deliver every load safely, on time and at an affordable price.
 </p>
-</section>
-
-<section>
-<h2>Our Services</h2>
-<br>
-<div class="services">
-<div class="card">
+</section><section>
+<h2 style="text-align:center;">Our Services</h2><div class="services"><div class="card">
 <h3>Local Deliveries</h3>
-<p>Fast and reliable delivery services.</p>
-</div>
-
-<div class="card">
+<p>Fast and reliable delivery services for businesses and individuals.</p>
+</div><div class="card">
 <h3>Furniture Removals</h3>
-<p>Safe transportation of household goods.</p>
-</div>
-
-<div class="card">
-<h3>Parcel Delivery</h3>
-<p>Quick parcel collection and delivery.</p>
-</div>
-
-<div class="card">
+<p>Safe transportation of household and office furniture.</p>
+</div><div class="card">
+<h3>Parcel Collection</h3>
+<p>Efficient collection and delivery of parcels.</p>
+</div><div class="card">
 <h3>Business Logistics</h3>
-<p>Professional transport solutions for businesses.</p>
-</div>
-</div>
-</section>
+<p>Professional logistics solutions tailored to your business.</p>
+</div></div>
+</section><section class="fleet">
+<h2>Our H100 Fleet</h2>
+<p>Reliable transport you can trust.</p><img src="IMG-20260425-WA0008.jpg" alt="Theka Logistics H100">
+</section><section class="contact">
+<h2>Contact Us</h2><p>📞 +27 678 877 546</p>
+<p>📧 raps14566@gmail.com</p><a href="https://wa.me/27678877546?text=Hi%20Theka%20Logistics,%20I%20would%20like%20a%20quote."
+target="_blank">
+WhatsApp Us
+</a>
 
-<section class="contact" id="contact">
-<h2>Contact Us</h2>
-<br>
-<p>📞 +27 678 877 546</p>
-<p>📧 raps14566@gmail.com</p>
-<br>
-<p>Contact us today for a free quote.</p>
-</section>
-
-<footer>
-<p>OTHEKA LOGISTICS © 2026</p>
+</section><footer>
+<p>THEKA LOGISTICS © 2026</p>
 <p>Moving Your Business Forward</p>
-</footer>
-
-<!-- Floating WhatsApp Button -->
-<a class="whatsapp-float"
-   href="https://wa.me/27678877546?text=Hi%20I%20would%20like%20a%20quote"
-   target="_blank">
-   💬
+</footer><a class="whatsapp"
+href="https://wa.me/27678877546?text=Hi%20Theka%20Logistics,%20I%20would%20like%20a%20quote."
+target="_blank">
+💬
 </a>
 
 </body>
